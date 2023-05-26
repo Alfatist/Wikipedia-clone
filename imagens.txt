@@ -1,0 +1,15 @@
+logo da wikipédia:
+
+https://pt.m.wikipedia.org/static/images/mobile/copyright/wikipedia-wordmark-fr.svg
+
+
+
+lupa icon: 
+
+https://pt.m.wikipedia.org/w/load.php?modules=skins.minerva.icons.wikimedia&image=search&format=original&skin=minerva&version=15r71
+
+
+
+3 barras icon: 
+
+https://pt.m.wikipedia.org/w/load.php?modules=skins.minerva.icons.wikimedia&image=menu&format=original&skin=minerva&version=15r71
