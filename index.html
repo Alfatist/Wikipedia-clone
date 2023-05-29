@@ -5,24 +5,55 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="style.css" />
+    <style>
+      .header_celular {
+        display: flex;
+        justify-content: space-between;
+        background-color: #eaecf0;
+        box-shadow: inset 0 -1px 3px rgba(0, 0, 0, 0.08);
+        padding: 0 16px;
+        height: 3.375em;
+      }
+
+      .p_12 {
+        padding: 0 12px;
+      }
+
+      .header_esquerda > img {
+        margin-left: -12px;
+      }
+
+      .header_esquerda {
+        display: flex;
+        flex-flow: wrap;
+        flex-wrap: wrap;
+      }
+
+      .btn_btn_transparent {
+        border: none;
+        cursor: pointer;
+        background-color: transparent;
+      }
+    </style>
   </head>
   <body>
-    <header>
-      <div id="lupa">
-        <button type="submit">
-          <img
-            src="https://pt.m.wikipedia.org/w/load.php?modules=skins.minerva.icons.wikimedia&image=search&format=original&skin=minerva&version=15r71"
-          />
-        </button>
-      </div>
-      <div id="tres">
-        <button type="submit">
+    <header class="header_celular">
+      <div class="header_esquerda">
+        <button class="btn_transparent">
           <img
             src="https://pt.m.wikipedia.org/w/load.php?modules=skins.minerva.icons.wikimedia&image=menu&format=original&skin=minerva&version=15r71"
+            class="p_12"
           />
         </button>
+        <img src="https://pt.m.wikipedia.org/static/images/mobile/copyright/wikipedia-wordmark-fr.svg" alt="Logo da Wikipédia" />
       </div>
-      <h2>Wikipedia</h2>
+      <button class="btn_transparent">
+        <img
+          src="https://pt.m.wikipedia.org/w/load.php?modules=skins.minerva.icons.wikimedia&image=search&format=original&skin=minerva&version=15r71"
+          alt="Procura no wikipédia"
+          class="p_12"
+        />
+      </button>
     </header>
 
     <main></main>
