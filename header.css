@@ -1,5 +1,6 @@
 .header_celular {
   display: flex;
+  flex: none;
   justify-content: space-between;
   background-color: #eaecf0;
   box-shadow: inset 0 -1px 3px rgba(0, 0, 0, 0.08);
@@ -22,7 +23,9 @@
 #tres_setas {
   margin-left: -12px;
 }
-
+#menu + label {
+  display: flex;
+}
 .header_esquerda {
   display: flex;
   flex-flow: wrap;
