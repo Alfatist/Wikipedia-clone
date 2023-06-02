@@ -4,6 +4,17 @@
   box-sizing: border-box;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
 #header {
   background-color: grey;
 }
@@ -35,6 +46,7 @@ h2 {
 
 main {
   padding: 0 16px;
+  flex: 1;
 }
 
 .subtitulo {
@@ -55,7 +67,6 @@ main {
   line-height: 1.65;
   word-wrap: break-word;
   font-size: 100%;
-  vertical-align: baseline;
   background: none;
   font-family: "Times New Roman", Times, serif;
   display: block;
@@ -73,4 +84,16 @@ a {
   color: rgb(51, 102, 204);
   text-decoration: none;
   background: none;
+}
+
+footer {
+  background-color: #eaecf0;
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
+  border-top: 1px solid #c8ccd1;
+}
+
+footer a {
+  color: #54595d;
 }
