@@ -1,0 +1,36 @@
+.header_celular {
+  display: flex;
+  justify-content: space-between;
+  background-color: #eaecf0;
+  box-shadow: inset 0 -1px 3px rgba(0, 0, 0, 0.08);
+  padding: 0 16px;
+  height: 3.375em;
+}
+
+#menu {
+  display: none;
+}
+
+.lupa {
+  color: white;
+}
+
+.p_12 {
+  padding: 0 12px;
+}
+
+#tres_setas {
+  margin-left: -12px;
+}
+
+.header_esquerda {
+  display: flex;
+  flex-flow: wrap;
+  flex-wrap: wrap;
+}
+
+.header_celular button {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}

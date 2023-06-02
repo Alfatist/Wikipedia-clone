@@ -1,51 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
-    <title>Home</title>
+    <title>Wikipédia Clone</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="style.css" />
-    <style>
-      .header_celular {
-        display: flex;
-        justify-content: space-between;
-        background-color: #eaecf0;
-        box-shadow: inset 0 -1px 3px rgba(0, 0, 0, 0.08);
-        padding: 0 16px;
-        height: 3.375em;
-      }
-
-      .p_12 {
-        padding: 0 12px;
-      }
-
-      #tres_setas {
-        margin-left: -12px;
-      }
-
-      .header_esquerda {
-        display: flex;
-        flex-flow: wrap;
-        flex-wrap: wrap;
-      }
-
-      .header_celular button {
-        border: none;
-        cursor: pointer;
-        background-color: transparent;
-      }
-    </style>
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="shortcut icon" href="https://pt.m.wikipedia.org/static/favicon/wikipedia.ico" type="image/x-icon" />
+    <!-- btn_transparent -->
+    <!-- min-width: 320px -->
   </head>
   <body>
     <header class="header_celular">
       <div class="header_esquerda">
-        <button class="btn_transparent">
-          <img
+        <input type="checkbox" id="menu" />
+        <label for="menu"
+          ><img
             src="https://pt.m.wikipedia.org/w/load.php?modules=skins.minerva.icons.wikimedia&image=menu&format=original&skin=minerva&version=15r71"
             class="p_12"
             id="tres_setas"
           />
-        </button>
+        </label>
+
         <img src="https://pt.m.wikipedia.org/static/images/mobile/copyright/wikipedia-wordmark-fr.svg" alt="Logo da Wikipédia" />
       </div>
       <button>
@@ -57,6 +35,13 @@
       </button>
     </header>
 
+    <label for="menu"><div class="pop-up"></div></label>
+    <nav>
+      <button type="button">Início</button>
+      <button type="button">Entrar</button>
+      <button type="button">Definições</button>
+      <button type="button">Donativos</button>
+    </nav>
     <main>
       <h2>Wikipédia:Página principal</h2>
       <section class="section_main">
