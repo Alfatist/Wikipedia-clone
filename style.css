@@ -10,11 +10,6 @@ body {
   height: 100%;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-}
-
 .pop-up {
   position: fixed;
   top: 0;
@@ -62,18 +57,11 @@ body:has(#menu:checked) nav {
   transform: translate(0, 0);
 }
 
-/* main */
-
 .img_main {
   width: 100%;
   max-width: 150px;
   max-height: 167px;
   margin: 0 0 0.6em 0.6em;
-}
-
-.f_right {
-  clear: right;
-  float: right;
 }
 
 h2 {
@@ -92,4 +80,27 @@ a {
   color: rgb(51, 102, 204);
   text-decoration: none;
   background: none;
+}
+
+.flex {
+  display: flex;
+  flex-flow: wrap;
+  flex-wrap: wrap;
+}
+
+.f_right {
+  clear: right;
+  float: right;
+}
+
+.flex.between{
+  justify-content: space-between;
+}
+
+.flex.column{
+  flex-direction: column;
+}
+
+.texto{
+  padding-right: calc(1.5em + 6px);
 }

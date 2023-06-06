@@ -1,5 +1,6 @@
-let telas = [];
 let telaContador = 0;
+// já tá importado o do outro js screensArrays
+// alert(screensArrays)
 
 function trocarTelas(obj, tela, transicao) {
   switch (transicao) {

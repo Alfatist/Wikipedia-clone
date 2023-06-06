@@ -26,11 +26,6 @@
 #menu + label {
   display: flex;
 }
-.header_esquerda {
-  display: flex;
-  flex-flow: wrap;
-  flex-wrap: wrap;
-}
 
 .header_celular button {
   border: none;
