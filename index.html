@@ -1,66 +1,79 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <title>Wikipédia Clone</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="header.css" />
-    <link rel="stylesheet" href="main.css" />
-    <link rel="stylesheet" href="footer.css" />
-    <link rel="shortcut icon" href="https://pt.m.wikipedia.org/static/favicon/wikipedia.ico" type="image/x-icon" />
-    <!-- btn_transparent -->
-    <!-- min-width: 320px -->
-  </head>
-  <body class="flex column">
-    <header class="header_celular">
-      <span class="flex">
-        <input type="checkbox" id="menu" />
-        <label for="menu"
-          ><img
-            src="https://pt.m.wikipedia.org/w/load.php?modules=skins.minerva.icons.wikimedia&image=menu&format=original&skin=minerva&version=15r71"
-            class="p_12"
-            id="tres_setas"
-          />
-        </label>
 
-        <img src="https://pt.m.wikipedia.org/static/images/mobile/copyright/wikipedia-wordmark-fr.svg" alt="Logo da Wikipédia" />
-      </span>
-      <button>
-        <img
-          src="https://pt.m.wikipedia.org/w/load.php?modules=skins.minerva.icons.wikimedia&image=search&format=original&skin=minerva&version=15r71"
-          alt="Procura no wikipédia"
-          class="p_12"
-        />
-      </button>
-    </header>
+<head>
+  <title>Wikipédia Clone</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="header.css" />
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="footer.css" />
+  <link rel="shortcut icon" href="https://pt.m.wikipedia.org/static/favicon/wikipedia.ico" type="image/x-icon" />
+  <style>
+    html:has(#pequeno:checked) main {
+      font-size: 90%;
+    }
 
-    <label for="menu"><div class="pop-up"></div></label>
-    <nav>
-      <button type="button">Início</button>
-      <button type="button">Entrar</button>
-      <button type="button">Definições</button>
-      <button type="button">Donativos</button>
-    </nav>
-    <main>
-      <h2>Configurações</h2>
-      <hr/>
-      <div class="flex between">
-        <div class="flex column texto"  >
-          <strong>Tamanho da fonte</strong>
-          Ajusta a dimensão da fonte para melhorar a legibilidade.
-        </div>
-        <select>
-          <option>Pequeno</option>
-          <option>Normal</option>
-          <option>Grande</option>
-          <option>Extra grande</option>
-        </select>
+    html:has(#grande:checked) main {
+      font-size: 120%;
+    }
+
+    html:has(#extra_grande:checked) main {
+      font-size: 140%;
+    }
+  </style>
+</head>
+
+<body class="flex column">
+  <header class="header_celular">
+    <span class="flex">
+      <input type="checkbox" id="menu" />
+      <label for="menu"><img
+          src="https://pt.m.wikipedia.org/w/load.php?modules=skins.minerva.icons.wikimedia&image=menu&format=original&skin=minerva&version=15r71"
+          class="p_12" id="tres_setas" />
+      </label>
+
+      <img src="https://pt.m.wikipedia.org/static/images/mobile/copyright/wikipedia-wordmark-fr.svg"
+        alt="Logo da Wikipédia" />
+    </span>
+    <button>
+      <img
+        src="https://pt.m.wikipedia.org/w/load.php?modules=skins.minerva.icons.wikimedia&image=search&format=original&skin=minerva&version=15r71"
+        alt="Procura no wikipédia" class="p_12" />
+    </button>
+  </header>
+
+  <label for="menu">
+    <div class="pop-up"></div>
+  </label>
+  <nav>
+    <button type="button">Início</button>
+    <button type="button">Entrar</button>
+    <button type="button">Definições</button>
+    <button type="button">Donativos</button>
+  </nav>
+  <main>
+    <h2>Configurações</h2>
+    <hr />
+    <div class="flex between">
+      <div class="flex column texto">
+        <strong>Tamanho da fonte</strong>
+        Ajusta a dimensão da fonte para melhorar a legibilidade.
       </div>
-    </main>
-    <footer>© Created by <a href="https://github.com/Alfatist"> Alfatist</a> && João Victor</footer>
-    <script src="screens.js"></script>
-    <script src="style.js"></script>
-    <script src="script.js"></script>
-  </body>
+      <select>
+        <option id="pequeno" value="pequeno">Pequeno</option>
+        <option selected>Normal</option>
+        <option id="grande" value="grande">Grande</option>
+        <option id="extra_grande" value="extra_grande">Extra grande</option>
+        <hr />
+      </select>
+    </div>
+  </main>
+  <footer>© Created by <a href="https://github.com/Alfatist"> Alfatist</a> && João Victor</footer>
+  <script src="screens.js"></script>
+  <script src="style.js"></script>
+  <script src="script.js"></script>
+</body>
+
 </html>
