@@ -5,6 +5,18 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+html:has(#pequeno:checked) main {
+  font-size: 90%;
+}
+
+html:has(#grande:checked) main {
+  font-size: 120%;
+}
+
+html:has(#extra_grande:checked) main {
+  font-size: 140%;
+}
+
 html,
 body {
   height: 100%;

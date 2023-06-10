@@ -9,19 +9,6 @@
     <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="footer.css" />
     <link rel="shortcut icon" href="https://pt.m.wikipedia.org/static/favicon/wikipedia.ico" type="image/x-icon" />
-    <style>
-      html:has(#pequeno:checked) main {
-        font-size: 90%;
-      }
-
-      html:has(#grande:checked) main {
-        font-size: 120%;
-      }
-
-      html:has(#extra_grande:checked) main {
-        font-size: 140%;
-      }
-    </style>
   </head>
 
   <body class="flex column">
@@ -53,10 +40,10 @@
     <nav>
       <input type="radio" name="menu" id="inicio" />
       <label for="inicio">Inicio</label>
-      <input type="radio" name="menu" id="entrar" />
+      <input type="radio" name="menu" id="entrar" checked />
       <label for="entrar">Entrar</label>
       <input type="radio" name="menu" id="definicoes" />
-      <label for="definicoes">definicoes</label>
+      <label for="definicoes">Definições</label>
       <input type="radio" name="menu" id="donativos" />
       <label for="donativos">donativos</label>
     </nav>
@@ -97,6 +84,17 @@
             <hr />
           </select>
         </div>
+      </section>
+      <section class="entrar screen">
+        <h2>Entrar</h2>
+        <div class="box aviso">
+          <strong>A wikipédia é feita por voluntários, pessoas como você!</strong><br />Inicie uma sessão para editar e colaborar conosco.
+        </div>
+        <div class="globo">
+          <img src="https://pt.m.wikipedia.org/static/images/icons/wikipedia.png" alt="imagem da wikipédia" />
+        </div>
+        <input type="text" placeholder="Introduza o seu nome de utilizador(a)" />
+        <input type="text" placeholder="Introduza a sua palavra-passe" />
       </section>
     </main>
     <footer>© Created by <a href="https://github.com/Alfatist"> Alfatist</a> && João Victor</footer>
