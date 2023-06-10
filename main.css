@@ -1,6 +1,15 @@
+body:has(#inicio:checked) .inicio.screen,
+body:has(#definicoes:checked) .definicoes.screen {
+  display: block;
+}
+
 main {
   padding: 0 16px;
   flex: 1;
+}
+
+main section {
+  display: none;
 }
 
 .subtitulo {

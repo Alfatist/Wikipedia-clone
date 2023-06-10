@@ -36,7 +36,11 @@ nav {
   transition: transform 250ms ease-in-out;
 }
 
-nav button {
+nav input {
+  display: none;
+}
+
+nav label {
   display: block;
   text-align: start;
   width: 100%;
@@ -47,9 +51,10 @@ nav button {
   cursor: pointer;
   color: #54595d;
   font-weight: bold;
+  font-size: 0.875rem;
 }
 
-nav button:hover {
+nav label:hover {
   box-shadow: inset 4px 0 #3366cc;
 }
 
@@ -93,14 +98,15 @@ a {
   float: right;
 }
 
-.flex.between{
+.flex.between {
   justify-content: space-between;
 }
 
-.flex.column{
+.flex.column {
   flex-direction: column;
+  flex: 1;
 }
 
-.texto{
+.texto {
   padding-right: calc(1.5em + 6px);
 }
