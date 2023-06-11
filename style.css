@@ -101,8 +101,6 @@ a {
 
 .flex {
   display: flex;
-  flex-flow: wrap;
-  flex-wrap: wrap;
 }
 
 .f_right {
