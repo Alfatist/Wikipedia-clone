@@ -141,13 +141,12 @@ main {
   background-color: #fff;
   border: 1px solid #a2a9b1;
   border-radius: 2px;
-  padding: 24px;
-  color: #222;
   padding: 16px;
+  color: #222;
   line-height: 1.6;
 }
 
-.doacaoForm > p {
+.doacaoForm > p:first-child {
   display: block;
   margin-bottom: 6px;
   text-align: center;
@@ -161,6 +160,87 @@ main {
   list-style: none;
 }
 
-li > input[type="radio"] {
+.doacaoForm li {
+  flex: 1 0 0;
+  padding: 4px;
+}
+
+.doacaoForm li > input[type="radio"] {
   display: none;
+}
+
+.doacaoForm li > input[type="radio"]:checked + label {
+  background-color: #2a4b8d;
+  color: #fff;
+  border-color: #2a4b8d;
+}
+
+.doacaoForm ul li label {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 50px;
+  padding: 0 4px;
+  border-radius: 2px;
+  font-family: inherit;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 100ms, color 100ms, border-color 100ms, box-shadow 100ms;
+  background-color: #f8f9fa;
+  color: #222;
+  border: 1px solid #a2a9b1;
+  height: 60px;
+  font-size: 15px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.doacaoForm span {
+  display: block;
+  font-size: 12px;
+  line-height: 1;
+  margin-bottom: 2px;
+  white-space: normal;
+  text-align: center;
+}
+
+.doacaoForm input[type="number"] {
+  display: block;
+  width: 100%;
+  border: 1px solid #a2a9b1;
+  color: #222;
+  padding: 2px;
+  border-radius: 2px;
+  direction: ltr;
+  text-align: center;
+  font-family: inherit;
+  font-size: 16px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0 4px;
+}
+
+.contato {
+  padding: 0 4px;
+  border: 0;
+}
+
+.contato > p {
+  display: flex;
+  align-items: flex-start;
+}
+
+.contato > p > input {
+  display: table-cell;
+  vertical-align: top;
+  margin: 7px 8px 8px 2px;
+  cursor: pointer;
+}
+
+.contato + p {
+  line-height: 14px;
+  margin-top: 8px;
 }
