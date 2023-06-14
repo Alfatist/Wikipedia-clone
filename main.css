@@ -10,7 +10,7 @@ main {
   flex: 1;
 }
 
-main > section {
+main>section {
   display: none;
 }
 
@@ -114,6 +114,7 @@ main {
 
 .entrar.screen p {
   text-align: center;
+<<<<<<< HEAD
 }
 
 .donativos.screen {

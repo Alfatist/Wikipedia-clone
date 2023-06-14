@@ -23,7 +23,8 @@
 #tres_setas {
   margin: 12px 12px 12px 0px;
 }
-#menu + label {
+
+#menu+label {
   display: flex;
 }
 
