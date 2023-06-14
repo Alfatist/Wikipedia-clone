@@ -175,7 +175,7 @@ main {
   border-color: #2a4b8d;
 }
 
-.doacaoForm ul li label {
+.doacaoButton {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -242,5 +242,20 @@ main {
 
 .contato + p {
   line-height: 14px;
-  margin-top: 8px;
+  margin: 8px 0;
 }
+
+.doacaoForm > .doacaoButton {
+  margin: 4px 4px;
+  padding: 0 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 15px;
+  color: #36c;
+}
+
+/* @media (max-width: 981px) {
+  
+} */
