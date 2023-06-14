@@ -17,13 +17,23 @@
       <span class="flex">
         <input type="checkbox" id="menu" />
         <label for="menu"
-          ><img src="https://pt.m.wikipedia.org/w/load.php?modules=skins.minerva.icons.wikimedia&image=menu&format=original&skin=minerva&version=15r71" alt="Imagem de abrir menu" id="tres_setas" />
+          ><img
+            loading="lazy"
+            src="https://pt.m.wikipedia.org/w/load.php?modules=skins.minerva.icons.wikimedia&image=menu&format=original&skin=minerva&version=15r71"
+            alt="Imagem de abrir menu"
+            id="tres_setas"
+          />
         </label>
 
-        <img src="https://pt.m.wikipedia.org/static/images/mobile/copyright/wikipedia-wordmark-fr.svg" alt="Logo da Wikipédia" />
+        <img loading="lazy" src="https://pt.m.wikipedia.org/static/images/mobile/copyright/wikipedia-wordmark-fr.svg" alt="Logo da Wikipédia" />
       </span>
-      <button>
-        <img src="https://pt.m.wikipedia.org/w/load.php?modules=skins.minerva.icons.wikimedia&image=search&format=original&skin=minerva&version=15r71" alt="Procura no wikipédia" class="p_12" />
+      <button type="button">
+        <img
+          loading="lazy"
+          src="https://pt.m.wikipedia.org/w/load.php?modules=skins.minerva.icons.wikimedia&image=search&format=original&skin=minerva&version=15r71"
+          alt="Procura no wikipédia"
+          class="p_12"
+        />
       </button>
     </header>
 
@@ -31,9 +41,9 @@
       <div class="pop-up"></div>
     </label>
     <nav>
-      <input type="radio" name="menu" id="inicio" />
+      <input type="radio" name="menu" id="inicio" checked />
       <label for="inicio">Inicio</label>
-      <input type="radio" name="menu" id="entrar" checked />
+      <input type="radio" name="menu" id="entrar" />
       <label for="entrar">Entrar</label>
       <input type="radio" name="menu" id="definicoes" />
       <label for="definicoes">Definições</label>
@@ -64,7 +74,7 @@
             <strong>Tamanho da fonte</strong>
             Ajusta a dimensão da fonte para melhorar a legibilidade.
           </div>
-          <select>
+          <select title="Selecionar o tamanho do texto">
             <option id="pequeno" value="pequeno">Pequeno</option>
             <option selected>Normal</option>
             <option id="grande" value="grande">Grande</option>
