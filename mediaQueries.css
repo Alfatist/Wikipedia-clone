@@ -12,4 +12,9 @@
     width: 90%;
     max-width: 993.3px;
   }
+
+  .donativos.screen {
+    display: flex;
+    margin-top: 10px;
+  }
 }
