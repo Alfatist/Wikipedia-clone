@@ -129,3 +129,7 @@ small {
 .texto {
   padding-right: calc(1.5em + 6px);
 }
+
+.flex.wrap {
+  flex-wrap: wrap;
+}

@@ -7,37 +7,41 @@
     <meta name="viewport" content="width=device-width" />
 
     <!-- estenções de links para outros códigos-->
-    
+
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="header.css" />
     <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="mediaQueries.css" />
     <link rel="shortcut icon" href="https://pt.m.wikipedia.org/static/favicon/wikipedia.ico" type="image/x-icon" />
   </head>
 
   <body class="flex column">
-    <header class="header_celular">
-      <span class="flex">
-        <input type="checkbox" id="menu" />
-        <label for="menu"
-          ><img
-            loading="lazy"
-            src="https://pt.m.wikipedia.org/w/load.php?modules=skins.minerva.icons.wikimedia&image=menu&format=original&skin=minerva&version=15r71"
-            alt="Imagem de abrir menu"
-            id="tres_setas"
-          />
-        </label>
+    <header>
+      <div class="header_container">
+        <span class="flex wrap">
+          <input type="checkbox" id="menu" />
+          <label for="menu"
+            ><img
+              loading="lazy"
+              src="https://pt.m.wikipedia.org/w/load.php?modules=skins.minerva.icons.wikimedia&image=menu&format=original&skin=minerva&version=15r71"
+              alt="Imagem de abrir menu"
+              id="tres_setas"
+            />
+          </label>
 
-        <img loading="lazy" src="https://pt.m.wikipedia.org/static/images/mobile/copyright/wikipedia-wordmark-fr.svg" alt="Logo da Wikipédia" />
-      </span>
-      <button type="button">
-        <img
-          loading="lazy"
-          src="https://pt.m.wikipedia.org/w/load.php?modules=skins.minerva.icons.wikimedia&image=search&format=original&skin=minerva&version=15r71"
-          alt="Procura no wikipédia"
-          class="p_12"
-        />
-      </button>
+          <img loading="lazy" src="https://pt.m.wikipedia.org/static/images/mobile/copyright/wikipedia-wordmark-fr.svg" alt="Logo da Wikipédia" />
+        </span>
+
+        <input type="search" id="procura" placeholder="digite algo..." />
+        <label for="procura" class="p_12">
+          <img
+            loading="lazy"
+            src="https://pt.m.wikipedia.org/w/load.php?modules=skins.minerva.icons.wikimedia&image=search&format=original&skin=minerva&version=15r71"
+            alt="Procura no wikipédia"
+        /></label>
+      </div>
     </header>
 
     <!--Código para criar os botões da barra de menu (Início, entrar, definição e donativos)-->
@@ -59,15 +63,22 @@
         <h2>Wikipédia:Página principal</h2>
         <section class="section_main">
           <h3 class="subtitulo">Artigo em Destaque</h3>
-          <img src="https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg" alt="placeholder" class="img_main f_right" />
+          <img
+            src="https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg"
+            alt="placeholder"
+            class="img_main f_right"
+          />
           O
-          <a href="https://pt.m.wikipedia.org/wiki/Forte_Southerland">Forte Southerland</a>, também conhecido como Reduto E e possivelmente Forte Diamante, é um reduto construído durante a
+          <a href="https://pt.m.wikipedia.org/wiki/Forte_Southerland">Forte Southerland</a>, também conhecido como Reduto E e possivelmente Forte
+          Diamante, é um reduto construído durante a
           <a href="https://pt.m.wikipedia.org/wiki/Guerra_de_Secess%C3%A3o"> Guerra Civil Americana</a>
           para proteger
-          <a href="https://pt.m.wikipedia.org/wiki/Camden_(Arkansas)" target="_blank"> Camden</a>, Arkansas. As forças confederadas construíram-no juntamente com outros quatro redutos no início de
-          1864, após uma vitória da União na campanha de Little Rock no ano anterior. Fort Southerland tem aproximadamente o tamanho de um quarteirão e é aproximadamente oval. Podia conter três
-          canhões. Quando as forças da União capturaram Camden em abril de 1864 durante a Expedição de Camden, eles melhoraram as defesas dos cinco redutos, que não eram suficientes para a defesa
-          adequada da cidade. Depois de os confederados retomarem Camden no final daquele mês, eles continuaram a melhorar as defesas da cidade.
+          <a href="https://pt.m.wikipedia.org/wiki/Camden_(Arkansas)" target="_blank"> Camden</a>, Arkansas. As forças confederadas construíram-no
+          juntamente com outros quatro redutos no início de 1864, após uma vitória da União na campanha de Little Rock no ano anterior. Fort
+          Southerland tem aproximadamente o tamanho de um quarteirão e é aproximadamente oval. Podia conter três canhões. Quando as forças da União
+          capturaram Camden em abril de 1864 durante a Expedição de Camden, eles melhoraram as defesas dos cinco redutos, que não eram suficientes
+          para a defesa adequada da cidade. Depois de os confederados retomarem Camden no final daquele mês, eles continuaram a melhorar as defesas da
+          cidade.
         </section>
       </section>
       <section class="definicoes screen">
@@ -89,16 +100,18 @@
       </section>
       <section class="entrar screen">
         <h2>Entrar</h2>
-        <div class="box aviso"><strong>A wikipédia é feita por voluntários, pessoas como você!</strong><br />Inicie uma sessão para editar e colaborar conosco.</div>
+        <div class="box aviso">
+          <strong>A wikipédia é feita por voluntários, pessoas como você!</strong><br />Inicie uma sessão para editar e colaborar conosco.
+        </div>
         <div class="globo">
           <img src="https://pt.m.wikipedia.org/static/images/icons/wikipedia.png" alt="imagem da wikipédia" />
         </div>
         <form action="#">
           <input type="text" placeholder="Introduza o seu nome de utilizador(a)" />
           <input type="text" placeholder="Introduza a sua palavra-passe" />
-          <button type="submit">Entrar</button>
-          <p>Não tem uma conta?</p>
-          <button type="button">Junte-se à Wikipédia!</button>
+          <button type="submit" title="Botão desabilitado pois os servidores estão fora do ar" onclick="alert(title)">Entrar</button>
+          <p><a disabled title="Link desabilitado pois os servidores estão fora do ar" onclick="alert(title)">Não tem uma conta?</a></p>
+          <button type="button" title="Botão desabilitado pois os servidores estão fora do ar" onclick="alert(title)">Junte-se à Wikipédia!</button>
         </form>
       </section>
       <section class="donativos screen">
@@ -125,13 +138,22 @@
             </ul>
             <fieldset class="contato">
               <legend>Podemos manter contato?</legend>
-              <p><input type="radio" name="contato" id="contatoSim" /><label for="contatoSim">Sim, a Wikimedia Foundation pode enviar-me um e-mail ocasionalmente</label></p>
-              <p><input type="radio" name="contato" id="contatoNao" /><label for="contatoNao">Não, não posso oferecer assistência ou aconselhamento no futuro</label></p>
+              <p>
+                <input type="radio" name="contato" id="contatoSim" /><label for="contatoSim"
+                  >Sim, a Wikimedia Foundation pode enviar-me um e-mail ocasionalmente</label
+                >
+              </p>
+              <p>
+                <input type="radio" name="contato" id="contatoNao" /><label for="contatoNao"
+                  >Não, não posso oferecer assistência ou aconselhamento no futuro</label
+                >
+              </p>
             </fieldset>
             <p>
               <small>
-                A Wikimedia Foundation irá enviar-lhe atualizações por e-mail e informar se a Wikipédia precisar do seu apoio ou aconselhamento no futuro. As suas informações são tratadas em
-                conformidade com a nossa política de privacidade de doadores. Cada e-mail que receber incluirá opções para cancelar facilmente a subscrição.
+                A Wikimedia Foundation irá enviar-lhe atualizações por e-mail e informar se a Wikipédia precisar do seu apoio ou aconselhamento no
+                futuro. As suas informações são tratadas em conformidade com a nossa política de privacidade de doadores. Cada e-mail que receber
+                incluirá opções para cancelar facilmente a subscrição.
               </small>
             </p>
             <button type="button" class="doacaoButton">Donativos por cartão de crédito ou débito</button>
@@ -152,7 +174,10 @@
                     transform="translate(-535.594 -20.809)"
                   ></path>
                 </g>
-                <g class="pix-gray" style="fill: none; stroke: #939598; stroke-width: 2.97638607; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10">
+                <g
+                  class="pix-gray"
+                  style="fill: none; stroke: #939598; stroke-width: 2.97638607; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10"
+                >
                   <path
                     d="M633.421 99.49V51.164c0-8.892 7.208-16.1 16.1-16.1l14.268.022c8.865.017 16.043 7.21 16.043 16.075v10.286c0 8.892-7.208 16.1-16.1 16.1h-20.161M683.82 35.059h6.189a6.607 6.607 0 0 1 6.606 6.607v36.098"
                     transform="translate(-535.594 -20.809)"
@@ -191,7 +216,10 @@
                     d="M529.3 384.2v60.5h-19.2V295.3H561c12.9 0 23.9 4.3 32.9 12.9 9.2 8.6 13.8 19.1 13.8 31.5 0 12.7-4.6 23.2-13.8 31.7-8.9 8.5-19.9 12.7-32.9 12.7h-31.7v.1zm0-70.5v52.1h32.1c7.6 0 14-2.6 19-7.7 5.1-5.1 7.7-11.3 7.7-18.3 0-6.9-2.6-13-7.7-18.1-5-5.3-11.3-7.9-19-7.9h-32.1v-.1zM657.9 339.1c14.2 0 25.4 3.8 33.6 11.4 8.2 7.6 12.3 18 12.3 31.2v63h-18.3v-14.2h-.8c-7.9 11.7-18.5 17.5-31.7 17.5-11.3 0-20.7-3.3-28.3-10s-11.4-15-11.4-25c0-10.6 4-19 12-25.2 8-6.3 18.7-9.4 32-9.4 11.4 0 20.8 2.1 28.1 6.3v-4.4c0-6.7-2.6-12.3-7.9-17-5.3-4.7-11.5-7-18.6-7-10.7 0-19.2 4.5-25.4 13.6l-16.9-10.6c9.3-13.5 23.1-20.2 41.3-20.2zm-24.8 74.2c0 5 2.1 9.2 6.4 12.5 4.2 3.3 9.2 5 14.9 5 8.1 0 15.3-3 21.6-9s9.5-13 9.5-21.1c-6-4.7-14.3-7.1-25-7.1-7.8 0-14.3 1.9-19.5 5.6-5.3 3.9-7.9 8.6-7.9 14.1zM808.2 342.4l-64 147.2h-19.8l23.8-51.5-42.2-95.7h20.9l30.4 73.4h.4l29.6-73.4h20.9z"
                   ></path>
                 </g>
-                <path fill="#4285F4" d="M452.93 372c0-6.26-.56-12.25-1.6-18.01h-80.48v33l46.35.01c-1.88 10.98-7.93 20.34-17.2 26.58v21.41h27.59c16.11-14.91 25.34-36.95 25.34-62.99z"></path>
+                <path
+                  fill="#4285F4"
+                  d="M452.93 372c0-6.26-.56-12.25-1.6-18.01h-80.48v33l46.35.01c-1.88 10.98-7.93 20.34-17.2 26.58v21.41h27.59c16.11-14.91 25.34-36.95 25.34-62.99z"
+                ></path>
                 <path
                   fill="#34A853"
                   d="M400.01 413.58c-7.68 5.18-17.57 8.21-29.14 8.21-22.35 0-41.31-15.06-48.1-35.36h-28.46v22.08c14.1 27.98 43.08 47.18 76.56 47.18 23.14 0 42.58-7.61 56.73-20.71l-27.59-21.4z"

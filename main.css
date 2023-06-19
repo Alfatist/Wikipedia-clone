@@ -10,7 +10,7 @@ main {
   flex: 1;
 }
 
-main>section {
+main > section {
   display: none;
 }
 
@@ -76,6 +76,14 @@ main {
 .globo img {
   height: 100%;
   width: auto;
+}
+
+.definicoes.screen > div {
+  align-items: center;
+}
+
+.definicoes.screen select {
+  height: 2em;
 }
 
 .entrar.screen input {
@@ -146,7 +154,7 @@ main {
   line-height: 1.6;
 }
 
-.doacaoForm>p:first-child {
+.doacaoForm > p:first-child {
   display: block;
   margin-bottom: 6px;
   text-align: center;
@@ -165,11 +173,11 @@ main {
   padding: 4px;
 }
 
-.doacaoForm li>input[type="radio"] {
+.doacaoForm li > input[type="radio"] {
   display: none;
 }
 
-.doacaoForm li>input[type="radio"]:checked+label {
+.doacaoForm li > input[type="radio"]:checked + label {
   background-color: #2a4b8d;
   color: #fff;
   border-color: #2a4b8d;
@@ -228,24 +236,24 @@ main {
   border: 0;
 }
 
-.contato>p {
+.contato > p {
   display: flex;
   align-items: flex-start;
 }
 
-.contato>p>input {
+.contato > p > input {
   display: table-cell;
   vertical-align: top;
   margin: 7px 8px 8px 2px;
   cursor: pointer;
 }
 
-.contato+p {
+.contato + p {
   line-height: 14px;
   margin: 8px 0;
 }
 
-.doacaoForm>.doacaoButton {
+.doacaoForm > .doacaoButton {
   margin: 4px 4px;
   padding: 0 4px;
   display: flex;
